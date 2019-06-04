@@ -6,6 +6,7 @@ Window {
     width: 640
     height: 480
     title: qsTr("Touchscreen test")
+    visibility: Window.FullScreen
 
     MouseArea {
         id: mouseArea
