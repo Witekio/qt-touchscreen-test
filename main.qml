@@ -14,13 +14,13 @@ Window {
         onPressed: {
             target.x = mouse.x
             target.y = mouse.y
-            console.log("Released at ", mouse.x, ";", mouse.y)
+            console.log("Pressed at ", mouse.x, ";", mouse.y)
         }
 
         onReleased: {
             target.x = mouse.x
             target.y = mouse.y
-            console.log("Pressed at  ", mouse.x, ";", mouse.y)
+            console.log("Released at  ", mouse.x, ";", mouse.y)
         }
 
         onClicked: {
