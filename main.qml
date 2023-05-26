@@ -11,19 +11,19 @@ Window {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        onPressed: {
+        onPressed: (mouse) => {
             target.x = mouse.x
             target.y = mouse.y
             console.log("Released at ", mouse.x, ";", mouse.y)
         }
 
-        onReleased: {
+        onReleased: (mouse) => {
             target.x = mouse.x
             target.y = mouse.y
             console.log("Pressed at  ", mouse.x, ";", mouse.y)
         }
 
-        onClicked: {
+        onClicked: (mouse) => {
             console.log("Clicked at  ", mouse.x, ";", mouse.y)
         }
     }
